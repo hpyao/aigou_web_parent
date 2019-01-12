@@ -16,8 +16,6 @@
 </template>
 
 <script>
-  import { requestLogin } from '../api/api';
-  //import NProgress from 'nprogress'
   export default {
     data() {
       return {
@@ -50,21 +48,26 @@
             //_this.$router.replace('/table');
             this.logining = true;
             //NProgress.start();
-            var loginParams = { username: this.ruleForm2.account, password: this.ruleForm2.checkPass };
-            requestLogin(loginParams).then(data => {
-              this.logining = false;
-              //NProgress.done();
-              let { msg, code, user } = data;
-              if (code !== 200) {
-                this.$message({
-                  message: msg,
-                  type: 'error'
-                });
-              } else {
-                sessionStorage.setItem('user', JSON.stringify(user));
-                this.$router.push({ path: '/table' });
-              }
-            });
+            var loginParams = { name: this.ruleForm2.account, password: this.ruleForm2.checkPass };
+            //https://www.easy-mock.com/mock/5c3957f10157fc56d707bc95/aigou/services/plat/login
+              //this表示当前vue对象
+              this.$http.post("/plat/login",loginParams)
+                .then(data=>{
+                    this.logining = false;
+                    console.log(data)
+                    let { success, message,retsultObj } = data.data;
+                    if (!success) {
+                        this.$message({
+                            message: message,
+                            type: 'error'
+                        });
+                    } else {
+                        retsultObj= {"name":"zs","age":18}
+                        sessionStorage.setItem('user', JSON.stringify(retsultObj));
+                        ///main
+                        this.$router.push({ path: '/main' });
+                    }
+                })
           } else {
             console.log('error submit!!');
             return false;
