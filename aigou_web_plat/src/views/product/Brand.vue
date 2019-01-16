@@ -41,70 +41,52 @@
 		<!--工具条-->
 		<el-col :span="24" class="toolbar">
 			<el-button type="danger" @click="batchRemove" :disabled="this.sels.length===0">批量删除</el-button>
-			<el-pagination layout="prev, pager, next" @current-change="handleCurrentChange" :page-size="20" :total="total" style="float:right;">
+			<el-pagination layout="prev, pager, next" @current-change="handleCurrentChange" :page-size="10" :total="total" style="float:right;">
 			</el-pagination>
 		</el-col>
 
 		<!--编辑界面-->
-		<el-dialog title="编辑" v-model="editFormVisible" :close-on-click-modal="false">
-			<el-form :model="editForm" label-width="80px" :rules="editFormRules" ref="editForm">
-				<el-form-item label="姓名" prop="name">
-					<el-input v-model="editForm.name" auto-complete="off"></el-input>
+		<el-dialog title="编辑" v-model="formVisible" :close-on-click-modal="false">
+			<el-form :model="form" label-width="80px" :rules="formRules" ref="form">
+				<el-form-item label="名称" prop="name">
+					<el-input v-model="form.name" auto-complete="off"></el-input>
 				</el-form-item>
-				<el-form-item label="性别">
-					<el-radio-group v-model="editForm.sex">
-						<el-radio class="radio" :label="1">男</el-radio>
-						<el-radio class="radio" :label="0">女</el-radio>
-					</el-radio-group>
+				<el-form-item label="英文名" prop="englishName">
+					<el-input v-model="form.englishName" auto-complete="off"></el-input>
 				</el-form-item>
-				<el-form-item label="年龄">
-					<el-input-number v-model="editForm.age" :min="0" :max="200"></el-input-number>
+				<el-form-item label="logo" prop="logo">
+					<el-upload
+							class="upload-demo"
+							action="http://127.0.0.1:9527/services/common/upload"
+							:on-preview="handlePreview"
+							:on-remove="handleRemove"
+							:file-list="fileList2"
+							:on-success="handleSuccess"
+							list-type="picture"
+					       >
+						<el-button size="small" type="primary">点击上传</el-button>
+						<div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
+					</el-upload>
 				</el-form-item>
-				<el-form-item label="生日">
-					<el-date-picker type="date" placeholder="选择日期" v-model="editForm.birth"></el-date-picker>
+				<el-form-item label="排序号" prop="sortIndex">
+					<el-input v-model="form.sortIndex" auto-complete="off"></el-input>
 				</el-form-item>
-				<el-form-item label="地址">
-					<el-input type="textarea" v-model="editForm.addr"></el-input>
+				<el-form-item label="类型" prop="productTypeId">
+					<el-input v-model="form.productTypeId" auto-complete="off"></el-input>
+				</el-form-item>
+				<el-form-item label="描述" prop="description">
+					<el-input v-model="form.description" auto-complete="off"></el-input>
 				</el-form-item>
 			</el-form>
 			<div slot="footer" class="dialog-footer">
-				<el-button @click.native="editFormVisible = false">取消</el-button>
+				<el-button @click.native="formVisible = false">取消</el-button>
 				<el-button type="primary" @click.native="editSubmit" :loading="editLoading">提交</el-button>
-			</div>
-		</el-dialog>
-
-		<!--新增界面-->
-		<el-dialog title="新增" v-model="addFormVisible" :close-on-click-modal="false">
-			<el-form :model="addForm" label-width="80px" :rules="addFormRules" ref="addForm">
-				<el-form-item label="姓名" prop="name">
-					<el-input v-model="addForm.name" auto-complete="off"></el-input>
-				</el-form-item>
-				<el-form-item label="性别">
-					<el-radio-group v-model="addForm.sex">
-						<el-radio class="radio" :label="1">男</el-radio>
-						<el-radio class="radio" :label="0">女</el-radio>
-					</el-radio-group>
-				</el-form-item>
-				<el-form-item label="年龄">
-					<el-input-number v-model="addForm.age" :min="0" :max="200"></el-input-number>
-				</el-form-item>
-				<el-form-item label="生日">
-					<el-date-picker type="date" placeholder="选择日期" v-model="addForm.birth"></el-date-picker>
-				</el-form-item>
-				<el-form-item label="地址">
-					<el-input type="textarea" v-model="addForm.addr"></el-input>
-				</el-form-item>
-			</el-form>
-			<div slot="footer" class="dialog-footer">
-				<el-button @click.native="addFormVisible = false">取消</el-button>
-				<el-button type="primary" @click.native="addSubmit" :loading="addLoading">提交</el-button>
 			</div>
 		</el-dialog>
 	</section>
 </template>
 
 <script>
-	import util from '../../common/js/util'
 	export default {
 		data() { //数据
 			return {
@@ -116,47 +98,51 @@
 				page: 1,
 				listLoading: false,
 				sels: [],//列表选中列
-
-				editFormVisible: false,//编辑界面是否显示
+                fileList2: [],
+				formVisible: false,//编辑界面是否显示
 				editLoading: false,
-				editFormRules: {
+				formRules: {
 					name: [
 						{ required: true, message: '请输入姓名', trigger: 'blur' }
 					]
 				},
 				//编辑界面数据
-				editForm: {
+				form: {
 					id: 0,
 					name: '',
-					sex: -1,
-					age: 0,
-					birth: '',
-					addr: ''
-				},
-
-				addFormVisible: false,//新增界面是否显示
-				addLoading: false,
-				addFormRules: {
-					name: [
-						{ required: true, message: '请输入姓名', trigger: 'blur' }
-					]
-				},
-				//新增界面数据
-				addForm: {
-					name: '',
-					sex: -1,
-					age: 0,
-					birth: '',
-					addr: ''
+					englishName: '',
+					sortIndex: '',
+					description: '',
+					logo: '',
+					productTypeId: 0
 				}
-
 			}
 		},
-		methods: { //方法
-			//性别显示转换
-			formatSex: function (row, column) {
-				return row.sex == 1 ? '男' : row.sex == 0 ? '女' : '未知';
+		methods: { //方法\
+            handleSuccess(response, file, fileList){
+                //上传成功回调
+				this.form.logo = file.response.resultObj;
 			},
+            handleRemove(file, fileList) {
+                var filePath =file.response.resultObj;
+                this.$http.delete("/common/del?filePath="+filePath)
+					.then(res=>{
+					    if(res.data.success){
+                            this.$message({
+                                message: '删除成功!',
+                                type: 'success'
+                            });
+						}else{
+                            this.$message({
+                                message: '删除失败!',
+                                type: 'error'
+                            });
+						}
+					})
+            },
+            handlePreview(file) {
+                console.log(file);
+            },
 			handleCurrentChange(val) {
 				this.page = val;
 				this.getBrands();
@@ -200,62 +186,42 @@
 			},
 			//显示编辑界面
 			handleEdit: function (index, row) {
-				this.editFormVisible = true;
-				this.editForm = Object.assign({}, row);
+				this.formVisible = true;
+				//回显 要提交后台
+				this.form = Object.assign({}, row);
+				//回显缩略图
+				this.fileList2.push({
+					"url":"http://172.16.14.211/"+row.logo
+				})
 			},
 			//显示新增界面
 			handleAdd: function () {
-				this.addFormVisible = true;
-				this.addForm = {
-					name: '',
-					sex: -1,
-					age: 0,
-					birth: '',
-					addr: ''
+				this.formVisible = true;
+				this.form = {
+                    name: '',
+                    englishName: '',
+                    sortIndex: '',
+                    description: '',
+                    logo: '',
+                    productTypeId: 0
 				};
 			},
 			//编辑
 			editSubmit: function () {
-				this.$refs.editForm.validate((valid) => {
+				this.$refs.form.validate((valid) => {
 					if (valid) {
+                        console.log(this.fileList2);
 						this.$confirm('确认提交吗？', '提示', {}).then(() => {
 							this.editLoading = true;
-							//NProgress.start();
-							let para = Object.assign({}, this.editForm);
-							para.birth = (!para.birth || para.birth == '') ? '' : util.formatDate.format(new Date(para.birth), 'yyyy-MM-dd');
-							editUser(para).then((res) => {
+							let para = Object.assign({}, this.form);
+							this.$http.post("/product/brand/save",para).then((res) => {
 								this.editLoading = false;
-								//NProgress.done();
 								this.$message({
 									message: '提交成功',
 									type: 'success'
 								});
-								this.$refs['editForm'].resetFields();
-								this.editFormVisible = false;
-								this.getBrands();
-							});
-						});
-					}
-				});
-			},
-			//新增
-			addSubmit: function () {
-				this.$refs.addForm.validate((valid) => {
-					if (valid) {
-						this.$confirm('确认提交吗？', '提示', {}).then(() => {
-							this.addLoading = true;
-							//NProgress.start();
-							let para = Object.assign({}, this.addForm);
-							para.birth = (!para.birth || para.birth == '') ? '' : util.formatDate.format(new Date(para.birth), 'yyyy-MM-dd');
-							addUser(para).then((res) => {
-								this.addLoading = false;
-								//NProgress.done();
-								this.$message({
-									message: '提交成功',
-									type: 'success'
-								});
-								this.$refs['addForm'].resetFields();
-								this.addFormVisible = false;
+								this.$refs['form'].resetFields();
+								this.formVisible = false;
 								this.getBrands();
 							});
 						});
