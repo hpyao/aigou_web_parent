@@ -7,7 +7,7 @@
 					<el-input v-model="filters.keyword" placeholder="关键字"></el-input>
 				</el-form-item>
 				<el-form-item>
-					<el-button type="primary" v-on:click="getBrands">查询</el-button>
+					<el-button type="primary" v-on:click="getProducts">查询</el-button>
 				</el-form-item>
 				<el-form-item>
 					<el-button type="primary" @click="handleAdd">新增</el-button>
@@ -16,19 +16,23 @@
 		</el-col>
 
 		<!--列表-->
-		<el-table :data="brands" highlight-current-row v-loading="listLoading" @selection-change="selsChange" style="width: 100%;">
+		<el-table :data="products" highlight-current-row v-loading="listLoading" @selection-change="selsChange" style="width: 100%;">
 			<el-table-column type="selection" width="55">
 			</el-table-column>
 			<el-table-column type="index" width="60">
 			</el-table-column>
-			<el-table-column prop="name" label="姓名" width="180" sortable>
+			<el-table-column prop="name" label="名称" width="200" sortable>
 			</el-table-column>
-			<el-table-column prop="englishName" label="英文名" width="200" sortable>
+			<el-table-column prop="brand.name" label="品牌" width="100" sortable>
 			</el-table-column>
 			<!--有点屌-->
-			<el-table-column prop="productType.name" label="商品类型" width="180" sortable>
+			<el-table-column prop="productType.name" label="商品类型" width="120" sortable>
 			</el-table-column>
-			<el-table-column prop="description" label="描述"  min-width="250" sortable>
+			<el-table-column prop="state" label="状态" width="100" :formatter="formatState" sortable>
+			</el-table-column>
+			<el-table-column prop="onSaleTime" label="上架时间" width="120" sortable>
+			</el-table-column>
+			<el-table-column prop="offSaleTime" label="下架时间"  min-width="120" sortable>
 			</el-table-column>
 			<el-table-column label="操作" width="150">
 				<template scope="scope">
@@ -51,10 +55,25 @@
 				<el-form-item label="名称" prop="name">
 					<el-input v-model="form.name" auto-complete="off"></el-input>
 				</el-form-item>
-				<el-form-item label="英文名" prop="englishName">
-					<el-input v-model="form.englishName" auto-complete="off"></el-input>
+				<el-form-item label="副名称" prop="subName">
+					<el-input v-model="form.subName" auto-complete="off"></el-input>
 				</el-form-item>
-				<el-form-item label="logo" prop="logo">
+				<el-form-item label="类型" prop="productTypeId">
+					<!--<el-input v-model="form.productTypeId" auto-complete="off"></el-input>-->
+					<select-tree width="200" :options="productTypes" v-model="form.productTypeId" />
+				</el-form-item>
+				<el-form-item label="品牌" prop="brandId">
+
+					<el-select v-model="form.brandId" placeholder="请选择">
+						<el-option
+								v-for="item in brands"
+								:key="item.id"
+								:label="item.name"
+								:value="item.id">
+						</el-option>
+					</el-select>
+				</el-form-item>
+				<el-form-item label="medias" prop="medias">
 					<el-upload
 							class="upload-demo"
 							action="http://127.0.0.1:9527/services/common/upload"
@@ -68,14 +87,18 @@
 						<div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
 					</el-upload>
 				</el-form-item>
-				<el-form-item label="排序号" prop="sortIndex">
-					<el-input v-model="form.sortIndex" auto-complete="off"></el-input>
+				<el-form-item label="简介" prop="description">
+					<el-input type="textarea" v-model="form.productExt.description" auto-complete="off"></el-input>
 				</el-form-item>
-				<el-form-item label="类型" prop="productTypeId">
-					<el-input v-model="form.productTypeId" auto-complete="off"></el-input>
-				</el-form-item>
-				<el-form-item label="描述" prop="description">
-					<el-input v-model="form.description" auto-complete="off"></el-input>
+				<el-form-item label="详情" prop="richContent">
+					<!--<el-input  v-model="form.productExt.richContent" auto-complete="off"></el-input>-->
+					<quill-editor
+							v-model="form.productExt.richContent"
+							ref="myQuillEditor"
+							:options="editorOption"
+							@blur="onEditorBlur($event)" @focus="onEditorFocus($event)"
+							@change="onEditorChange($event)">
+					</quill-editor>
 				</el-form-item>
 			</el-form>
 			<div slot="footer" class="dialog-footer">
@@ -87,13 +110,28 @@
 </template>
 
 <script>
+    import Vue from 'vue';
+    import  VueQuillEditor from 'vue-quill-editor';
+    // require styles 引入样式
+    import 'quill/dist/quill.core.css';
+    import 'quill/dist/quill.snow.css';
+    import 'quill/dist/quill.bubble.css';
+
+    Vue.use(VueQuillEditor);
+    import SelectTree from '@/components/SelectTree.vue';
 	export default {
+	    components:{
+	        SelectTree
+		},
 		data() { //数据
 			return {
 				filters: {
                     keyword: ''
 				},
-				brands: [],
+                editorOption:{},
+				brands:[],
+				productTypes:[],
+				products: [],
 				total: 0,
 				page: 1,
 				listLoading: false,
@@ -110,15 +148,19 @@
 				form: {
 					id: 0,
 					name: '',
-					englishName: '',
-					sortIndex: '',
-					description: '',
-					logo: '',
-					productTypeId: 0
-				}
+					subName: '',
+					productTypeId: 0,
+					brandId: '',
+					//medias: []//,
+					productExt:{}
+                }
 			}
 		},
-		methods: { //方法\
+		methods: { //方法
+            //性别显示转换
+            formatState: function (row, column) {
+                return row.state == 1 ? '上架' :"下架";
+            },
             handleSuccess(response, file, fileList){
                 //上传成功回调
 				this.form.logo = file.response.resultObj;
@@ -145,22 +187,36 @@
             },
 			handleCurrentChange(val) {
 				this.page = val;
-				this.getBrands();
+				this.getProducts();
 			},
 			//获取用户列表
-            getBrands() {
+            getProducts() {
 				let para = {
 					page: this.page,
 					keyword: this.filters.keyword
 				};
 				this.listLoading = true;
 
-				this.$http.post("/product/brand/json",para)
+				this.$http.post("/product/product/json",para)
                     .then((res) => {
                         console.log(this);
                         this.total = res.data.total;
-                        this.brands = res.data.rows;
+                        this.products = res.data.rows;
                         this.listLoading = false;
+                    });
+			},
+			getBrands(){
+                this.listLoading = true;
+                this.$http.get("/product/brand/list")
+                    .then((res) => {
+                        this.brands = res.data;
+                        this.listLoading = false;
+                    });
+			},
+            getProductTypes(){
+                this.$http.get("/product/productType/treeData")
+                    .then(res=>{
+                        this.productTypes = res.data;
                     });
 			},
 			//删除
@@ -178,7 +234,7 @@
 							message: '删除成功',
 							type: 'success'
 						});
-						this.getBrands();
+						this.getProducts();
 					});
 				}).catch(() => {
 
@@ -188,22 +244,23 @@
 			handleEdit: function (index, row) {
 				this.formVisible = true;
 				//回显 要提交后台
+				console.debug(row);
 				this.form = Object.assign({}, row);
 				//回显缩略图
-				this.fileList2.push({
-					"url":this.$staticIp+row.logo
-				})
+				// this.fileList2.push({
+				// 	"url":this.$staticIp+row.logo
+				// })
 			},
 			//显示新增界面
 			handleAdd: function () {
 				this.formVisible = true;
 				this.form = {
                     name: '',
-                    englishName: '',
-                    sortIndex: '',
-                    description: '',
-                    logo: '',
-                    productTypeId: 0
+                    subName: '',
+                    productTypeId: 0,
+                    brandId: '',
+                    //medias: [],
+                    productExt:{}
 				};
 			},
 			//编辑
@@ -214,7 +271,7 @@
 						this.$confirm('确认提交吗？', '提示', {}).then(() => {
 							this.editLoading = true;
 							let para = Object.assign({}, this.form);
-							this.$http.post("/product/brand/save",para).then((res) => {
+							this.$http.post("/product/product/save",para).then((res) => {
 								this.editLoading = false;
 								this.$message({
 									message: '提交成功',
@@ -222,7 +279,7 @@
 								});
 								this.$refs['form'].resetFields();
 								this.formVisible = false;
-								this.getBrands();
+								this.getProducts();
 							});
 						});
 					}
@@ -247,15 +304,23 @@
 							message: '删除成功',
 							type: 'success'
 						});
-						this.getBrands();
+						this.getProducts();
 					});
 				}).catch(() => {
 
 				});
-			}
+			},
+            onEditorBlur(){//失去焦点事件
+            },
+            onEditorFocus(){//获得焦点事件
+            },
+            onEditorChange(){//内容改变事件
+            }
 		}, // $(function()) 加载完毕后执行
 		mounted() {
+			this.getProducts();
 			this.getBrands();
+			this.getProductTypes();
 		}
 	}
 
