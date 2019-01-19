@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        let arr1 = ["1","2"]; //last
+        let arr2 = ["a","b"]; //1_a 1_b 1_c 2_a ..... e1
+        // arr1.forEach(function (el1) {
+        //     arr2.forEach(function (el2) {
+        //         console.log(el1+"_"+el2)
+        //     })
+        // })
+        let arry3 = ["x","y"]
+        let arrys = [arr1,arr2,arry3];
+        let result =  arrys.reduce(function (last,element) {
+            let arary = [];
+            //last上次笛卡尔积的结果 再做el
+            last.forEach(function (e1) {
+                element.forEach(function (e2) {
+                    arary.push(e1+"_"+e2);
+                })
+            })
+            return arary;
+        })
+        console.log(result);
+
+
+        //我们只
+        /**
+         *
+         * [
+         *  {
+         *      name:肤色
+         *      skuValues:["xx","yy"]
+         *  },
+         *  {
+         *      name:升高
+         *      skuValues:["zz","dd"]
+         *  },
+         *  {
+         *      name:三维
+         *      skuValues:["aa","bb"]
+         *  },
+         *  {
+         *      name:三维
+         *      skuValues:[]
+         *  }
+         * ]
+         *
+         *
+         *
+         *
+         *
+         */
+
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

@@ -12,11 +12,23 @@
 				<el-form-item>
 					<el-button type="primary" @click="handleAdd">新增</el-button>
 				</el-form-item>
+				<el-form-item>
+					<el-button type="primary" @click="handleConfigViewProperties">配置显示属性</el-button>
+				</el-form-item>
+				<el-form-item>
+					<el-button type="primary" @click="handleConfigSkuProperties">配置sku属性</el-button>
+				</el-form-item>
+				<el-form-item>
+					<el-button type="primary" @click="handleOnsale">上架</el-button>
+				</el-form-item>
+				<el-form-item>
+					<el-button type="primary" @click="handleOffSale">下架</el-button>
+				</el-form-item>
 			</el-form>
 		</el-col>
 
 		<!--列表-->
-		<el-table :data="products" highlight-current-row v-loading="listLoading" @selection-change="selsChange" style="width: 100%;">
+		<el-table :data="products" highlight-current-row v-loading="listLoading" @row-click="rowClick" @selection-change="selsChange" style="width: 100%;">
 			<el-table-column type="selection" width="55">
 			</el-table-column>
 			<el-table-column type="index" width="60">
@@ -106,6 +118,51 @@
 				<el-button type="primary" @click.native="editSubmit" :loading="editLoading">提交</el-button>
 			</div>
 		</el-dialog>
+		<!--显示属性对话框界面-->
+		<el-dialog title="配置显示属性" v-model="viewPropertiesVisible" :close-on-click-modal="false">
+			<el-card class="box-card">
+				<div v-for="viewProperty in viewProperties" :key="viewProperty" class="text item">
+					<el-row :gutter="20">
+						<el-col :span="4">{{viewProperty.name}}:</el-col>
+						<el-col :span="20"><el-input auto-complete="off" v-model="viewProperty.selectValue" style="width: 200px"></el-input></el-col>
+					</el-row>
+				</div>
+			</el-card>
+			<div slot="footer" class="dialog-footer">
+				<el-button @click.native="viewPropertiesVisible = false">取消</el-button>
+				<el-button type="primary" @click.native="viewPropertiesSubmit" :loading="editLoading">提交</el-button>
+			</div>
+		</el-dialog>
+
+		<!--sku属性对话框界面-->
+		<el-dialog title="配置sku属性" v-model="skuPropertiesVisible" :close-on-click-modal="false">
+			<el-card class="box-card">
+				<div v-for="skuProperty in skuProperties" :key="skuProperty" class="text item">
+					{{skuProperty.name}}:
+					<!--
+					   1 以后skuValue如果有多个需要设置多个input
+					   2 输入一行后要要能自动加入下一行.
+					     比如 v-for="i in 10"，你会得到1~10   v-for="i in 2" 1~2
+					-->
+					<div v-for="i in skuProperty.skuValues.length+1" :key="i" class="text item">
+						<el-input auto-complete="off" v-model="skuProperty.skuValues[i-1]" style="width: 400px"></el-input>
+						<!--删除i-1(i从1开始,而索引是从零开始)这一个-->
+						<el-button type="danger" @click="skuProperty.skuValues.splice(i-1,1)" icon="el-icon-delete" plain>删除</el-button>
+					</div>
+				</div>
+			</el-card>
+			<el-table :data="data_list">
+				<template v-for="(col,index) in tbHeaders" scope="scope">
+					<el-table-column  :label="col.label" :prop="xxx">
+					</el-table-column>
+				</template>
+
+			</el-table>
+			<div slot="footer" class="dialog-footer">
+				<el-button @click.native="skuPropertiesVisible = false">取消</el-button>
+				<el-button type="primary" @click.native="viewPropertiesSubmit" :loading="editLoading">提交</el-button>
+			</div>
+		</el-dialog>
 	</section>
 </template>
 
@@ -125,10 +182,14 @@
 		},
 		data() { //数据
 			return {
+                data_list:[],
+                tbHeaders:[{"label":"肤色"},{"label":"身高"},{"label":"三维"}],
 				filters: {
                     keyword: ''
 				},
                 editorOption:{},
+				viewProperties:[],
+                skuProperties:[],
 				brands:[],
 				productTypes:[],
 				products: [],
@@ -138,6 +199,9 @@
 				sels: [],//列表选中列
                 fileList2: [],
 				formVisible: false,//编辑界面是否显示
+                viewPropertiesVisible:false,
+                skuPropertiesVisible:false,
+				curentRow: null,
 				editLoading: false,
 				formRules: {
 					name: [
@@ -157,6 +221,76 @@
 			}
 		},
 		methods: { //方法
+            viewPropertiesSubmit(){
+                //Map{"procutId":1,viewProperties:[]}
+                let productId = this.curentRow.id;
+                let params = {"productId":productId,"specifications":this.viewProperties};
+                this.$http.post("/product/product/addViewProperties",params)
+					.then(res=>{
+					    let result = res.data;
+					    if(result.success){
+                            this.$message({
+                                message: '设置成功!',
+                                type: 'success'
+                            });
+                            this.viewPropertiesVisible = false;
+						}
+						else{
+                            this.$message({
+                                message: result.message,
+                                type: 'error'
+                            });
+						}
+					})
+			},
+            handleConfigViewProperties(){
+				//查询显示属性
+				//0 是否选中行
+				if(!this.curentRow){
+                    this.$message({
+                        message: '请选择一行后,再操作!',
+                        type: 'warning'
+                    });
+                    return;
+				}
+                this.viewPropertiesVisible =true;
+				//1 获取当前行productId
+				let productId = this.curentRow.id;
+				//2 发送请求获取显示属性数据
+				this.$http.get("/product/specification/product/"+productId)
+					.then(res=>{
+                        this.viewProperties = res.data;
+                        //console.log(this.viewProperties);
+					})
+				//3 界面双向绑定数据
+	        },
+            handleConfigSkuProperties(){
+				//查询显示属性
+                //0 是否选中行
+                if(!this.curentRow){
+                    this.$message({
+                        message: '请选择一行后,再操作!',
+                        type: 'warning'
+                    });
+                    return;
+                }
+                this.skuPropertiesVisible =true;
+                //1 获取当前行productId
+                let productId = this.curentRow.id;
+                //2 发送请求获取显示属性数据
+                this.$http.get("/product/specification/product/skusProperties/"+productId)
+                    .then(res=>{
+                        this.skuProperties = res.data;
+                        //console.log(this.skuProperties);
+                    })
+                //3 界面双向绑定数据
+            },
+            handleOnsale(){
+
+            },
+            handleOffSale(){
+
+            },
             //性别显示转换
             formatState: function (row, column) {
                 return row.state == 1 ? '上架' :"下架";
@@ -199,7 +333,7 @@
 
 				this.$http.post("/product/product/json",para)
                     .then((res) => {
-                        console.log(this);
+                        //console.log(this);
                         this.total = res.data.total;
                         this.products = res.data.rows;
                         this.listLoading = false;
@@ -244,7 +378,7 @@
 			handleEdit: function (index, row) {
 				this.formVisible = true;
 				//回显 要提交后台
-				console.debug(row);
+				//console.debug(row);
 				this.form = Object.assign({}, row);
 				//回显缩略图
 				// this.fileList2.push({
@@ -288,6 +422,12 @@
 			selsChange: function (sels) {
 				this.sels = sels;
 			},
+            rowClick: function (row,event,column) {
+                console.log(row);
+                console.log(row.productTypeId);
+                this.curentRow = row;
+
+            },
 			//批量删除
 			batchRemove: function () {
 				var ids = this.sels.map(item => item.id).toString();
@@ -321,6 +461,40 @@
 			this.getProducts();
 			this.getBrands();
 			this.getProductTypes();
+		},
+		//件事属性值变化
+		watch:{
+            skuProperties:{
+                //[{[]}]
+                //注意：当观察的数据为对象或数组时，curVal和oldVal是相等的，因为这两个形参指向的是同一个数据对象
+                handler(curVal,oldVal){
+                    // 过滤掉用户没有填写数据的规格参数
+                    const arr = this.skuProperties.filter(s => s.skuValues.length > 0);
+                    // 通过reduce进行累加笛卡尔积
+                    var skus =  arr.reduce((last, spec) => {
+                        const result = [];
+                        last.forEach(o => {
+                            spec.skuValues.forEach(option => {
+                                // option //一个一一个值 黄皮肤
+                                const obj = {};
+                                Object.assign(obj, o);
+                                obj[spec.name] = option;
+                                result.push(obj);
+                            })
+                        })
+                        return result
+                    }, [{}]);
+                    console.debug(skus);
+                    this.data_list = skus;
+                    //已经获取多个sku
+					let headers = [];
+                    //现在没有一定有字段 库存 价格 是否可用 颜色
+					Object.keys(skus[0]).forEach(sku=>{
+
+					});
+                },
+                deep:true
+            }
 		}
 	}
 

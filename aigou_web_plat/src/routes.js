@@ -45,8 +45,7 @@ let routes = [
         children: [
             { path: '/productBrand', component: Brand, name: '商品品牌' },
             { path: '/productType', component: ProductType, name: '商品类型' },
-            { path: '/productTemplate', component: Form, name: '商品模板' },
-            { path: '/productViewProperties', component: user, name: '商品规格' },
+            { path: '/productViewProperties', component: user, name: '属性管理' },
             { path: '/product', component: Product, name: '商品管理' },
         ]
     },
