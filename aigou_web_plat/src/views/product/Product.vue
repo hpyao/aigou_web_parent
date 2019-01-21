@@ -137,6 +137,7 @@
 		<!--sku属性对话框界面-->
 		<el-dialog title="配置sku属性" v-model="skuPropertiesVisible" :close-on-click-modal="false">
 			<el-card class="box-card">
+				<!--属性选择-->
 				<div v-for="skuProperty in skuProperties" :key="skuProperty" class="text item">
 					{{skuProperty.name}}:
 					<!--
@@ -151,16 +152,27 @@
 					</div>
 				</div>
 			</el-card>
-			<el-table :data="data_list">
-				<template v-for="(col,index) in tbHeaders" scope="scope">
-					<el-table-column  :label="col.label" :prop="xxx">
+			<!--动态表格-->
+			<el-table :data="skuDatas">
+				<!--cols一堆列,col哪一列-->
+				<template v-for="(col ,index) in cols">
+					<el-table-column :prop="col.prop" sortable :label="col.label" v-if="['price','state','stock'].includes(col.prop)">
+						<template scope="scope">
+							<el-input auto-complete="off" v-model="skuDatas[scope.$index].price"  style="width: 400px" v-if="'price'===col.prop"/>
+							<el-input auto-complete="off" v-model="skuDatas[scope.$index].stock" style="width: 400px" v-if="'stock'===col.prop"/>
+							<el-checkbox v-model="skuDatas[scope.$index].state" v-if="col.prop==='state'">备选项</el-checkbox>
+						</template>
 					</el-table-column>
+					<!--只做显示-->
+					<el-table-column :prop="col.prop" sortable :label="col.label" v-if="!['price','state','stock'].includes(col.prop)">
+					</el-table-column>
+					<!--<el-table-column :prop="col.prop" sortable :label="col.label">-->
+					<!--</el-table-column>-->
 				</template>
-
 			</el-table>
 			<div slot="footer" class="dialog-footer">
 				<el-button @click.native="skuPropertiesVisible = false">取消</el-button>
-				<el-button type="primary" @click.native="viewPropertiesSubmit" :loading="editLoading">提交</el-button>
+				<el-button type="primary" @click.native="skuPropertiesSubmit" :loading="editLoading">提交</el-button>
 			</div>
 		</el-dialog>
 	</section>
@@ -182,8 +194,9 @@
 		},
 		data() { //数据
 			return {
-                data_list:[],
-                tbHeaders:[{"label":"肤色"},{"label":"身高"},{"label":"三维"}],
+			    skuIsNull:true,
+                skuDatas:[],
+                cols:[],
 				filters: {
                     keyword: ''
 				},
@@ -222,7 +235,7 @@
 		},
 		methods: { //方法
             viewPropertiesSubmit(){
-                //Map{"procutId":1,viewProperties:[]}
+                //Map{"procutId":1,viewPro perties:[]}
                 let productId = this.curentRow.id;
                 let params = {"productId":productId,"specifications":this.viewProperties};
                 this.$http.post("/product/product/addViewProperties",params)
@@ -260,10 +273,31 @@
 				this.$http.get("/product/specification/product/"+productId)
 					.then(res=>{
                         this.viewProperties = res.data;
-                        //console.log(this.viewProperties);
 					})
 				//3 界面双向绑定数据
 	        },
+            skuPropertiesSubmit(){
+                //Map{"procutId":1,viewPro perties:[]}
+                let productId = this.curentRow.id;
+                let params = {"productId":productId,"skuProperties":this.skuProperties,"skuDatas":this.skuDatas};
+                this.$http.post("/product/product/addSkus",params)
+                    .then(res=>{
+                        let result = res.data;
+                        if(result.success){
+                            this.$message({
+                                message: '设置成功!',
+                                type: 'success'
+                            });
+                            this.skuPropertiesVisible = false;
+                        }
+                        else{
+                            this.$message({
+                                message: result.message,
+                                type: 'error'
+                            });
+                        }
+                    })
+			},
             handleConfigSkuProperties(){
 				//查询显示属性
                 //0 是否选中行
@@ -281,9 +315,17 @@
                 this.$http.get("/product/specification/product/skusProperties/"+productId)
                     .then(res=>{
                         this.skuProperties = res.data;
-                        //console.log(this.skuProperties);
                     })
-                //3 界面双向绑定数据
+				//查询sku值做回显
+                this.$http.get("/product/product/skus/"+productId)
+                    .then(res=>{
+                        if( this.skuDatas.length > 0)
+						{
+						    this.skuIsNull = false;
+						}
+                        this.skuDatas = res.data;
+
+                    })
             },
             handleOnsale(){
 
@@ -380,10 +422,6 @@
 				//回显 要提交后台
 				//console.debug(row);
 				this.form = Object.assign({}, row);
-				//回显缩略图
-				// this.fileList2.push({
-				// 	"url":this.$staticIp+row.logo
-				// })
 			},
 			//显示新增界面
 			handleAdd: function () {
@@ -456,7 +494,7 @@
             },
             onEditorChange(){//内容改变事件
             }
-		}, // $(function()) 加载完毕后执行
+		},
 		mounted() {
 			this.getProducts();
 			this.getBrands();
@@ -465,33 +503,57 @@
 		//件事属性值变化
 		watch:{
             skuProperties:{
-                //[{[]}]
-                //注意：当观察的数据为对象或数组时，curVal和oldVal是相等的，因为这两个形参指向的是同一个数据对象
                 handler(curVal,oldVal){
-                    // 过滤掉用户没有填写数据的规格参数
-                    const arr = this.skuProperties.filter(s => s.skuValues.length > 0);
-                    // 通过reduce进行累加笛卡尔积
-                    var skus =  arr.reduce((last, spec) => {
-                        const result = [];
-                        last.forEach(o => {
-                            spec.skuValues.forEach(option => {
-                                // option //一个一一个值 黄皮肤
-                                const obj = {};
-                                Object.assign(obj, o);
-                                obj[spec.name] = option;
-                                result.push(obj);
+                    //1 确实是第一次从数据库查询值
+					//2 第二次修改属性
+                    if(!this.skuIsNull){ //不为null
+						console.log("xxx",this.skuIsNull);
+                        this.skuIsNull = true;
+					}else{
+                        console.log("jjjj",this.skuProperties);
+                        // 过滤掉用户没有填写数据的规格参数
+                        const arr = this.skuProperties.filter(s => s.skuValues.length > 0);
+                        // 通过reduce进行累加笛卡尔积
+                        var skus =  arr.reduce((last, spec) => {
+                            const result = [];
+                            last.forEach(o => {
+                                spec.skuValues.forEach(option => {
+                                    // option //一个一一个值 黄皮肤
+                                    const obj = {};
+                                    Object.assign(obj, o);
+                                    obj[spec.name] = option;
+                                    result.push(obj);
+                                })
                             })
+                            return result
+                        }, [{}]);
+                        //假数据测试是否能够绑定数据
+                        skus.forEach(function (item) {
+                            item['price'] = '';
+                            item['stock'] = '';
+                            item['state'] = 0;
                         })
-                        return result
-                    }, [{}]);
-                    console.debug(skus);
-                    this.data_list = skus;
-                    //已经获取多个sku
-					let headers = [];
+                        this.skuDatas = skus;
+                        console.log(skus);
+					}
+                    let headers = [];
                     //现在没有一定有字段 库存 价格 是否可用 颜色
-					Object.keys(skus[0]).forEach(sku=>{
-
+                    //skus [{"身高":170,"三维":"xxx",价格:18,库存:18,是否可用:0},{"身高":170,"三维":"xxx",价格:18,库存:18,是否可用:0}]
+					Object.keys(this.skuDatas[0]).forEach(sku=>{
+					    let value = sku;
+					    if(sku=='price'){
+                            value = '价格'
+						}
+					    if(sku=='stock'){
+                            value = '库存'
+						}
+					    if(sku=='state'){
+                            value = '启用'
+						}
+                        let col =  {"label":value,"prop":sku};
+                        headers.push(col);
 					});
+					this.cols = headers;
                 },
                 deep:true
             }
