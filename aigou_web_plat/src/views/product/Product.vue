@@ -319,11 +319,11 @@
 				//查询sku值做回显
                 this.$http.get("/product/product/skus/"+productId)
                     .then(res=>{
-                        if( this.skuDatas.length > 0)
+                        if( res.data.length > 0)
 						{
 						    this.skuIsNull = false;
+                            this.skuDatas = res.data;
 						}
-                        this.skuDatas = res.data;
 
                     })
             },
@@ -507,7 +507,7 @@
                     //1 确实是第一次从数据库查询值
 					//2 第二次修改属性
                     if(!this.skuIsNull){ //不为null
-						console.log("xxx",this.skuIsNull);
+						console.log("xxx",this.skuDatas);
                         this.skuIsNull = true;
 					}else{
                         console.log("jjjj",this.skuProperties);
