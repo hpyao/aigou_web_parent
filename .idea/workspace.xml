@@ -2,19 +2,698 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22f6cd1c-7ac3-40e5-9670-f8e8f1087445" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/Test.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/dist/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/dist/vue.common.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/dist/vue.esm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/dist/vue.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/dist/vue.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/dist/vue.runtime.common.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/dist/vue.runtime.esm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/dist/vue.runtime.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/dist/vue.runtime.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/codegen/events.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/codegen/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/create-compiler.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/directives/bind.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/directives/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/directives/model.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/directives/on.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/error-detector.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/helpers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/optimizer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/parser/entity-decoder.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/parser/filter-parser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/parser/html-parser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/parser/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/parser/text-parser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/compiler/to-function.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/components/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/components/keep-alive.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/config.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/global-api/assets.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/global-api/extend.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/global-api/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/global-api/mixin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/global-api/use.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/events.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/init.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/inject.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/lifecycle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/proxy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/render-helpers/bind-object-listeners.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/render-helpers/bind-object-props.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/render-helpers/check-keycodes.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/render-helpers/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/render-helpers/render-list.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/render-helpers/render-slot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/render-helpers/render-static.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/render-helpers/resolve-filter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/render-helpers/resolve-slots.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/render.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/instance/state.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/observer/array.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/observer/dep.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/observer/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/observer/scheduler.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/observer/traverse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/observer/watcher.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/util/debug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/util/env.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/util/error.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/util/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/util/lang.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/util/next-tick.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/util/options.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/util/perf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/util/props.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/create-component.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/create-element.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/create-functional-component.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/helpers/extract-props.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/helpers/get-first-component-child.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/helpers/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/helpers/is-async-placeholder.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/helpers/merge-hook.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/helpers/normalize-children.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/helpers/resolve-async-component.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/helpers/update-listeners.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/modules/directives.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/modules/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/modules/ref.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/patch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/core/vdom/vnode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/compiler/directives/html.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/compiler/directives/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/compiler/directives/model.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/compiler/directives/text.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/compiler/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/compiler/modules/class.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/compiler/modules/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/compiler/modules/model.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/compiler/modules/style.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/compiler/options.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/compiler/util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/entry-compiler.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/entry-runtime-with-compiler.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/entry-runtime.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/entry-server-basic-renderer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/entry-server-renderer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/class-util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/components/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/components/transition-group.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/components/transition.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/directives/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/directives/model.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/directives/show.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/modules/attrs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/modules/class.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/modules/dom-props.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/modules/events.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/modules/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/modules/style.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/modules/transition.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/node-ops.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/patch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/runtime/transition-util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/server/compiler.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/server/directives/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/server/directives/model.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/server/directives/show.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/server/modules/attrs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/server/modules/class.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/server/modules/dom-props.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/server/modules/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/server/modules/style.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/server/util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/util/attrs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/util/class.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/util/compat.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/util/element.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/util/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/web/util/style.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/directives/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/directives/model.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/append.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/class.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/props.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/recycle-list/component-root.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/recycle-list/component.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/recycle-list/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/recycle-list/recycle-list.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/recycle-list/text.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/recycle-list/v-bind.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/recycle-list/v-for.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/recycle-list/v-if.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/recycle-list/v-on.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/recycle-list/v-once.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/compiler/modules/style.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/entry-compiler.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/entry-framework.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/entry-runtime-factory.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/components/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/components/richtext.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/components/transition-group.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/components/transition.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/directives/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/modules/attrs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/modules/class.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/modules/events.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/modules/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/modules/style.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/modules/transition.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/node-ops.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/patch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/recycle-list/render-component-template.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/recycle-list/virtual-component.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/runtime/text-node.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/util/element.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/util/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/platforms/weex/util/parser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/bundle-renderer/create-bundle-renderer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/bundle-renderer/create-bundle-runner.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/bundle-renderer/source-map-support.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/create-basic-renderer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/create-renderer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/optimizing-compiler/codegen.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/optimizing-compiler/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/optimizing-compiler/modules.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/optimizing-compiler/optimizer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/optimizing-compiler/runtime-helpers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/render-context.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/render-stream.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/render.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/template-renderer/create-async-file-mapper.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/template-renderer/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/template-renderer/parse-template.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/template-renderer/template-stream.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/webpack-plugin/client.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/webpack-plugin/server.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/webpack-plugin/util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/server/write.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/sfc/parser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/shared/constants.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/src/shared/util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/types/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/types/options.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/types/plugin.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/types/vnode.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/js/vue/types/vue.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/test.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/test2.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/add-cart.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/addr_bg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/cart-loading.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/category.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/color-style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/common-icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/common.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/flow-icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/flow.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/goods-icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/goods.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/highslide.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/hislider-arrow.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/icon-police.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/iconfont.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/iconfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/iconfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/iconfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/iconfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/index.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/layer.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/mask3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/noresult.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/point.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/search_btn.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/share_style0_16.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/slide-aside.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/steps-bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/top.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/css/user-icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14653018315416.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14764954036890.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14764954102153.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14764954152608.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14764964733764.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14764965903535.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14764965961731.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14764966002139.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14764969809656.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14764970272595.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14764970668769.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14765114342081.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14765115543907.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14765115708146.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766692020322.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766692081792.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766692121503.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766692292256.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766692345384.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766696571148.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766696618102.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766696657565.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766696790287.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766696834552.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766699579386.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766700161192.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766700209924.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766700252992.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766700725544.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766700783238.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766705426370.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766705701150.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766705759850.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766705803380.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766706133730.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766706182810.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766710152238.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766710340754.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766710505400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766710655662.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766710802316.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766710986894.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766722355540.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14766722553394.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770216309091.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770216378708.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770216421695.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770216623185.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770216672997.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770216727855.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770216879745.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770216921561.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770299014436.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770299071863.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770299135055.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770299564426.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770299617990.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770299658730.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770299824208.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14770299873128.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14778844965714.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14788627664630.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14788784646707(1).jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14788784646707.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14789657995869(1).png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14789657995869.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14789669544048(1).png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14789669544048.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14789686200823(1).png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14789686200823.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14791931341447.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14791931657968.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14791933279555.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14792111002627.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14792112036541.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14794053929710.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14799957179888.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801482758075.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801530398071.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801531283038.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801532085004.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801533273756.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801533402821.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801613319305.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801613383873.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801613483505.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801613539784.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801613614322.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801615543092.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801616752150.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801618391788.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801618901752.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801619453323.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801619768519.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801619956204.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801620074802.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801624672557.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801625141347.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801625738164.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801625872852.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801625914190.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801627055415.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801636760417.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801637258671.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801637590908.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801637763936.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801637970242.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/14801638025007.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1.ZSiKFXXXXcUaXXXYXGcGpXX_M2.SS2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB11gIXNVXXXXcBXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB11jIPNXXXXXc_apXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB11jIPNXXXXXc_apXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB11pMlMVXXXXbyaXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB12zSlNVXXXXb.aXXXXXXXXXXX_!!0-item_pic(1).jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB12zSlNVXXXXb.aXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB13GNgJpXXXXc.XpXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB13GNgJpXXXXc.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB13Q6KOXXXXXabaFXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB13Q6KOXXXXXabaFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB13UeJKVXXXXcJXpXXXXXXXXXX_!!0-item_pic(1).jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB13UeJKVXXXXcJXpXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB13r9aLpXXXXctXVXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB15KMnMVXXXXahXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB15TfbKVXXXXaHXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB16FwJNVXXXXbmXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB16HI6NVXXXXX5XFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB16WwcOXXXXXceXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB16_dFKXXXXXbLXpXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB16_dFKXXXXXbLXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB16cQbOXXXXXbSXpXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB17MBPOpXXXXabapXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB17MBPOpXXXXabapXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB17pAPMVXXXXcbXpXXYXGcGpXX_M2.SS2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB186J.NpXXXXbXXFXXXXXXXXXX_!!0-item_pic(1).jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB186J.NpXXXXbXXFXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB18Pu_NXXXXXaRXXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB18nkXOXXXXXXvXFXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB18o8sNpXXXXaBXVXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB18o8sNpXXXXaBXVXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB18vo9NXXXXXaJXXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB18vo9NXXXXXaJXXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB19BpBNpXXXXbPapXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB19qoWJVXXXXXrXXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB19qoWJVXXXXXrXXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1CPIxOXXXXXaCXXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1CPIxOXXXXXaCXXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1CQLMNVXXXXciXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1CXZANVXXXXalaFXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1FvrlNFXXXXbnXVXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1GTu1NFXXXXXyXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1HKgrMpXXXXXZXXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1HKsyOXXXXXaTXXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1HKsyOXXXXXaTXXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1IeRBIpXXXXaEXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1J.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1JNz_KXXXXXcRXXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1JTDZOXXXXXbGXVXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1JTDZOXXXXXbGXVXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1KQBDOpXXXXabXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1LI8vNVXXXXboXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1LR0lLXXXXXaGXVXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1LTuKNpXXXXXXaFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1Lwr.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1Miz1OXXXXXbBXVXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1NCdcOXXXXXcHXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1NvGsLpXXXXXvXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1O_vnJXXXXXbaXXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1O_vnJXXXXXbaXXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1P564MVXXXXXmXVXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1P7zAOXXXXXXeXpXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1P7zAOXXXXXXeXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1PlFbNpXXXXb7XFXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1QeAdOXXXXXaoXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1RIyhOXXXXXbRaXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1RKcCNVXXXXXcXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1RUFWOXXXXXXQXXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1RwYELXXXXXXHaXXXXXXXXXXX_!!0-item_pic(1).jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1RwYELXXXXXXHaXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1TSFlNFXXXXbEXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1UD9sNpXXXXX1XVXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1ULcXOXXXXXX0XFXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1ULcXOXXXXXX0XFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1Ud6MOXXXXXcOaXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1Vm.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1WC_WMVXXXXaLaXXXXXXXXXXX_!!0-item_pic(1).jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1WC_WMVXXXXaLaXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1XBQBLFXXXXboXXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1Xe7cOXXXXXcGXpXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1Xe7cOXXXXXcGXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1XxpOLpXXXXauapXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1YTYHHpXXXXc_XXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1Yq_0OXXXXXaOapXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1ZjUJNFXXXXcdapXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1_002.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1_003.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1aShoOpXXXXb.XFXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1beKyNFXXXXb5XpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1ch9GIFXXXXXDXpXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1ch9GIFXXXXXDXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1d9cUOXXXXXcZXXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1deEVJVXXXXaVXVXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1eQyAGXXXXXaLaXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1f8HJOXXXXXXUapXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1fmtuNFXXXXcKXVXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1fmtuNFXXXXcKXVXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1foJVKVXXXXcvXFXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1foJVKVXXXXcvXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1hQwUOXXXXXaDXpXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1hQwUOXXXXXaDXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1hgb7JVXXXXXMXVXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1i22HNpXXXXX1XVXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1iZODNVXXXXaAXVXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1jJRoNFXXXXb6XFXXYXGcGpXX_M2.SS2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1jYUBKVXXXXcoXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1jekbJXXXXXaHaXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1jekbJXXXXXaHaXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1jx.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1k5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1kTfaOXXXXXb6XpXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1lX90HVXXXXcoXFXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1lX90HVXXXXcoXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1lewkJpXXXXbwXFXXXXXXXXXX_!!0-item_pic(1).jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1lewkJpXXXXbwXFXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1lj4FNVXXXXb.aXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1lj4FNVXXXXb.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1m1qWNFXXXXcCXFXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1map.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1myctOXXXXXbYXXXXXXXXXXXX_!!0-item_pic(1).jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1myctOXXXXXbYXXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1ndVyOXXXXXcqXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1o0XGNpXXXXccXXXXYXGcGpXX_M2.SS2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1o0XGNpXXXXccXXXXYXGcGpXX_M2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1oERMNFXXXXXUXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1p1Q6NVXXXXcMaXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1p1Q6NVXXXXcMaXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1qGWWNpXXXXbjaXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1qLimKpXXXXX2XVXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1qLimKpXXXXX2XVXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1qb.MKpXXXXc2XFXXYXGcGpXX_M2.SS2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1qb.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1qnFuNFXXXXarXpXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1rTkoNFXXXXcIXFXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1riduJXXXXXXnXpXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1tGDXNVXXXXcZXVXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1veOkOXXXXXcQapXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1vezSKVXXXXbiXVXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1vu39LFXXXXXHXXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1vvpnNXXXXXbKaXXXXXXXXXXX_!!0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1vvpnNXXXXXbKaXXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1xtesNVXXXXa.XFXXYXGcGpXX_M2.SS2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1xtesNVXXXXa.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB1zIYmOXXXXXXfapXXXXXXXXXX_0-item_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB20VsjbM1I.eBjSszeXXc2hpXa_!!1741204340.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB20VsjbM1I.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB20o7hlFXXXXXqXpXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB21K_WcPm2.eBjSZFtXXX56VXa_!!26839388.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB21cOZmpXXXXXJXpXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB21dhwX5Zd61BjSZFLXXXMMFXa_!!87580387.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB21nGnjVXXXXa0XXXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB21sZXXMUc61BjSZFmXXbJHFXa_!!1078286277.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB21sZXXMUc61BjSZFmXXbJHFXa_1078286277.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2281okVXXXXXNXpXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB22bRmsXXXXXXtXXXXXXXXXXXX_2756777890.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB234.FXB9J.eBjy0FoXXXyvpXa_!!2871308082.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB234.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB26sS_fVXXXXXDXpXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB27RXRpFXXXXcdXXXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB27jD9cYWJ.eBjSspdXXXiXFXa_!!651579576.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB27jD9cYWJ.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB28Kmaa8aM.eBjSZFMXXcypVXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB28MDmfVXXXXaAXXXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2BNAvaF5N.eBjSZFvXXbvMFXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2C6IVeXXXXXXUXXXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2CUOMb0AvbeFjSspbXXbcOFXa_1018971550.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2CtCIkVXXXXcAXXXXXXXXXXXX_!!1739732836.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2D2EAcUWO.eBjSZPcXXbopVXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2DBKFcH5K.eBjy0FnXXaZzVXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2DJekagSI.eBjy1XcXXc1jXXa_!!1075092158.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2DJekagSI.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2DPOpjVXXXXcOXpXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2E7Wjb5gSXeFjy0FcXXahAXXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2EcdYauNOdeFjSZFBXXctzXXa_!!2103587316.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2EcdYauNOdeFjSZFBXXctzXXa_2103587316.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2F7kXcwOI.eBjSszhXXbHvFXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2FqzyXmwp41Bjy1zbXXbyppXa_114854449.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2G2rflVXXXXaqXXXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2GB7_Xu2yQeBjSszhXXcgeVXa_!!2884422779.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2GB7_Xu2yQeBjSszhXXcgeVXa_2884422779.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2GFoMaraI.eBjy1XdXXcoqXXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2GJmJX8YxQeBjSszeXXa0spXa_!!62017656.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2GJmJX8YxQeBjSszeXXa0spXa_62017656.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2Gg9fXOgSXeFjy0FcXXahAXXa_!!1732113555.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2Jf1clFXXXXXeXpXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2K2cAaICO.eBjSZFzXXaRiVXa_!!1739732836(1).jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2K2cAaICO.eBjSZFzXXaRiVXa_!!1739732836(2).jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2K2cAaICO.eBjSZFzXXaRiVXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2M99znVXXXXcmXXXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2MmQoaPm2.eBjSZFtXXX56VXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2N0tMaHaI.eBjSszdXXaB6XXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2N53WaCiJ.eBjSspiXXbqAFXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2N_4GXhwb61BjSZJiXXbD3XXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2O7wmXb5K.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2QBJIXW9I.eBjy0FeXXXqwFXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2QCaAaMSI.eBjy1XcXXc1jXXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2RmegaV5N.eBjSZFKXXX_QVXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2RqsVabeI.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2S8bQcCuJ.eBjy0FgXXXBBXXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2Tqxtb9iJ.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2U4H6chmI.eBjy0FlXXbgkVXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2UPCma4qK.eBjSZJiXXaOSFXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2WR4jpFXXXXXUXFXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2WY1ebV5N.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2XCwVaBPxQeBjy1XcXXXHzVXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2XlN6bByN.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2YNIvaF5N.eBjSZFvXXbvMFXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2Yg3paNaK.eBjSZFwXXXjsFXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2ZKvDcw9J.eBjSsppXXXAAVXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2ZSYhXcCO.eBjSZFzXXaRiVXa_!!1880296155.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2ZSYhXcCO.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2_FZIuXXXXXXZXXXXXXXXXXXX_!!477888791.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2_FZIuXXXXXXZXXXXXXXXXXXX_477888791.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2aRTVcCKI.eBjy1zcXXXIOpXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2acW1aNvzQeBjSZFEXXbYEpXa_!!1093750181.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2acW1aNvzQeBjSZFEXXbYEpXa_1093750181.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2axlTau_yQeBjy0FlXXczrXXa_!!305081051.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2bd0BcfTJXuFjSspeXXapipXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2chE3dgCN.eBjSZFoXXXj0FXa_!!2923157743.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2chE3dgCN.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2d7ygdlyN.eBjSZFkXXb8YFXa_!!1732113555.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2e4PcmpXXXXbfXXXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2eGIEtFXXXXXWXpXXXXXXXXXX_413965386.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2ebgLb75M.eBjSZFrXXXPgVXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2eoggmpXXXXbKXXXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2evwlXM7c61BjSZFKXXb6hFXa_!!2672232349.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2evwlXM7c61BjSZFKXXb6hFXa_2672232349.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2hR1fbxuI.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2haQuaNeK.eBjSZFuXXcT4FXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2jzQTgpXXXXc9XXXXXXXXXXXX_!!2341503388.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2jzQTgpXXXXc9XXXXXXXXXXXX_2341503388.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2k8wSaseJ.eBjy0FiXXXqapXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2kcr3cCCI.eBjy1XbXXbUBFXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2kosfgVXXXXafXpXXXXXXXXXX_825989450.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2lLLtoVXXXXbOXpXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2mWXWaDnB11BjSspdXXaTIpXa_!!341406431.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2mWXWaDnB11BjSspdXXaTIpXa_341406431.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2nqlEaV55V1Bjy0FpXXXhDpXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2oomYjVXXXXXAXXXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2or25csaJ.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2p8XIcCGI.eBjSspcXXcVjFXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2pFFMdduO.eBjSZFCXXXULFXa_!!131276599.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2pcefbmiK.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2q99vaSqJ.eBjy1zbXXbx8FXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2qAMZaw1J.eBjy0FpXXaMoXXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2qMNLaS1I.eBjy0FjXXabfXXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2qobnpFXXXXXNXFXXXXXXXXXX_!!2426834532.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2qobnpFXXXXXNXFXXXXXXXXXX_2426834532.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2smksaNaK.eBjSZFAXXczFXXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2uSanck1M.eBjSZPiXXawfpXa_!!1075092158.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2uSanck1M.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2uVfUcr1K.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2uekLbXHzQeBjSZFHXXbwZpXa_!!2995349161.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2uk4.aH5K.eBjy0FnXXaZzVXa_!!1906308653.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2uk4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2vX8IaHaI.eBjSspaXXXIKpXa_!!1743582420.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2wb3oaLOM.eBjSZFqXXculVXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2x97hbg1I.eBjSszeXXc2hpXa_!!1647957945.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2x97hbg1I.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2xWGdeVXXXXXQXpXXXXXXXXXX_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2xYwSaceJ.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2y6u1aOGO.eBjSZFjXXcU9FXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2zFcwnpXXXXbuXpXXXXXXXXXX_!!305081051.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/TB2ztkuaRyN.eBjSZFkXXb8YFXa_!!1739732836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/bigpic1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/bigpic2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/bigpic3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/bigpic4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/bigpic5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/blank.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/cxyz.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/default_shop_logo_0.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/default_user_portrait_0.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/hyyz.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/icon-police.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/jpfw.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/kxwz.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/loading.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/mall_logo_0.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/mall_logo_right_ad_image_0.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/mall_logo_right_ad_image_1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/mall_search_right_ad_image_0.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/mall_top_ad_image_0.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/mall_wx_qrcode_0.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/national_emblem_light.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/online.ww" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/openim.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/pa" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/service.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/shop-icon2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/smyz.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/img/test/spaceball.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/bubbleup.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/cart.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/category.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/checkout.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/common.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/data/boxgoodslist.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/data/compare.goods-list.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/data/goods-change-location.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/data/goods-comment.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/data/goods-desc.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/data/region-list.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/data/sale-region-list.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/data/siteuser.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/data/user.collect.goods-list.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/goods.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/highslide-with-gallery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/index_tab.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.cookie.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.countdown.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.fly.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.hiSlider.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.history.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.lazyload.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.method.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.modal.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.region.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.tablelist.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.validate.custom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.validate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jquery.widget.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/jump.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/layer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/magiczoom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/messages_zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/nav.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/select_region.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/share.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/szy.cart.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/tabs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/js/tabs_totop.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou_shopping/readme.txt" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/aigou_web_plat/LICENSE" afterPath="$PROJECT_DIR$/aigou_web_plat/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/aigou_web_plat/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/aigou_web_plat/build/webpack.base.conf.js" />
-      <change beforePath="$PROJECT_DIR$/aigou_web_plat/config/index.js" afterPath="$PROJECT_DIR$/aigou_web_plat/config/index.js" />
-      <change beforePath="$PROJECT_DIR$/aigou_web_plat/index.html" afterPath="$PROJECT_DIR$/aigou_web_plat/index.html" />
-      <change beforePath="$PROJECT_DIR$/aigou_web_plat/package.json" afterPath="$PROJECT_DIR$/aigou_web_plat/package.json" />
-      <change beforePath="$PROJECT_DIR$/aigou_web_plat/src/main.js" afterPath="$PROJECT_DIR$/aigou_web_plat/src/main.js" />
-      <change beforePath="$PROJECT_DIR$/aigou_web_plat/src/mock/mock.js" afterPath="$PROJECT_DIR$/aigou_web_plat/src/mock/mock.js" />
-      <change beforePath="$PROJECT_DIR$/aigou_web_plat/src/routes.js" afterPath="$PROJECT_DIR$/aigou_web_plat/src/routes.js" />
-      <change beforePath="$PROJECT_DIR$/aigou_web_plat/src/views/Home.vue" afterPath="$PROJECT_DIR$/aigou_web_plat/src/views/Home.vue" />
-      <change beforePath="$PROJECT_DIR$/aigou_web_plat/src/views/Login.vue" afterPath="$PROJECT_DIR$/aigou_web_plat/src/views/Login.vue" />
+      <change beforePath="$PROJECT_DIR$/aigou_web_plat/src/views/product/Product.vue" afterPath="$PROJECT_DIR$/aigou_web_plat/src/views/product/Product.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,6 +704,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>users</find>
+      <find>getUsers()</find>
+      <find>getBrands</find>
+      <find>get</find>
+      <find>handleCurrentChange</find>
+      <find>handleDel</find>
+      <find>editForm</find>
+      <find>brand</find>
+      <find>forma</find>
+      <find>description</find>
+      <find>tbHeaders</find>
+      <find>data_list</find>
+      <find>skuProperties</find>
+      <find>handleOnsale</find>
+      <find>selsChange</find>
+      <find>console</find>
+      <find>172</find>
+      <find>fileList2</find>
+      <find>keyword</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>getBrands()</replace>
+      <replace>form</replace>
+      <replace>product</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,10 +757,19 @@
         <option value="$PROJECT_DIR$/aigou_web_plat/build/webpack.base.conf.js" />
         <option value="$PROJECT_DIR$/aigou_web_plat/src/mock/mock.js" />
         <option value="$PROJECT_DIR$/aigou_web_plat/src/views/Home.vue" />
-        <option value="$PROJECT_DIR$/aigou_web_plat/src/main.js" />
         <option value="$PROJECT_DIR$/aigou_web_plat/config/index.js" />
-        <option value="$PROJECT_DIR$/aigou_web_plat/src/routes.js" />
         <option value="$PROJECT_DIR$/aigou_web_plat/src/views/Login.vue" />
+        <option value="$PROJECT_DIR$/aigou_web_plat/src/views/product/ProductType.vue" />
+        <option value="$PROJECT_DIR$/aigou_web_plat/src/views/product/Brand.vue" />
+        <option value="$PROJECT_DIR$/aigou_web_plat/src/main.js" />
+        <option value="$PROJECT_DIR$/aigou_web_plat/src/components/SelectTree.vue" />
+        <option value="$PROJECT_DIR$/aigou_web_plat/src/routes.js" />
+        <option value="$PROJECT_DIR$/aigou_web_plat/test.html" />
+        <option value="$PROJECT_DIR$/Test/test2.html" />
+        <option value="$PROJECT_DIR$/Test/test.html" />
+        <option value="$PROJECT_DIR$/aigou_web_plat/src/views/product/Product.vue" />
+        <option value="$PROJECT_DIR$/aigou_shopping/readme.txt" />
+        <option value="$PROJECT_DIR$/aigou_shopping/list.html" />
       </list>
     </option>
   </component>
@@ -64,14 +787,23 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/aigou_web_plat/node_modules" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/aigou_web_plat/package.json" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="53" />
-    <option name="y" value="110" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -94,16 +826,51 @@
           <expand>
             <path>
               <item name="aigou_web_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_shopping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_web_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="aigou_web_plat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_web_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_web_plat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_web_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_web_plat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_web_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_web_plat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="nav1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_web_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_web_plat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aigou_web_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aigou_web_plat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="vuex" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -116,6 +883,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\openSource\IdeaProjects\aigou_web_parent\aigou_shopping" />
+      <recent name="E:\openSource\IdeaProjects\aigou_web_parent\Test\js" />
+      <recent name="E:\openSource\IdeaProjects\aigou_web_parent\aigou_web_plat\src\views\product" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -226,76 +1001,120 @@
       <option name="presentableId" value="Default" />
       <updated>1547257695541</updated>
       <workItem from="1547257701018" duration="772000" />
-      <workItem from="1547259096781" duration="12621000" />
+      <workItem from="1547259096781" duration="13312000" />
+      <workItem from="1547341318745" duration="15292000" />
+      <workItem from="1547514834390" duration="7589000" />
+      <workItem from="1547600572203" duration="10747000" />
+      <workItem from="1547773107797" duration="9862000" />
+      <workItem from="1547859518445" duration="16906000" />
+      <workItem from="1548032323705" duration="11152000" />
+      <workItem from="1548064503739" duration="4233000" />
+      <workItem from="1548118521985" duration="11925000" />
     </task>
+    <task id="LOCAL-00001" summary="提交">
+      <created>1547278316849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547278316849</updated>
+    </task>
+    <task id="LOCAL-00002" summary="提交">
+      <created>1547601046333</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547601046333</updated>
+    </task>
+    <task id="LOCAL-00003" summary="提交">
+      <created>1547633270641</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1547633270641</updated>
+    </task>
+    <task id="LOCAL-00004" summary="提交">
+      <created>1547805890476</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1547805890476</updated>
+    </task>
+    <task id="LOCAL-00005" summary="提交">
+      <created>1548067609762</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1548067609762</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13393000" />
+    <option name="totallyTimeSpent" value="101790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8370119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767403" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8370119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767403" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8370119" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767403" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -306,16 +1125,63 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/views/product/Product.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="38" column="37" lean-forward="false" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/views/product/Product.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_shopping/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/aigou_web_plat/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -324,7 +1190,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="200">
             <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="11" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -334,7 +1199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -342,7 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="9" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -350,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="0" lean-forward="true" selection-start-line="4" selection-start-column="88" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -358,9 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -368,7 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -376,7 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -384,7 +1241,134 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/views/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2425">
+          <caret line="77" column="28" lean-forward="false" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/views/Main.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-870">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/build/dev-client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/build/dev-server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/config/prod.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/views/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="67" column="61" lean-forward="true" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_shopping/home_bak.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/views/nav1/Table.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="162" column="14" lean-forward="true" selection-start-line="159" selection-start-column="12" selection-end-line="162" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/views/product/ProductType.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="106" column="27" lean-forward="true" selection-start-line="102" selection-start-column="15" selection-end-line="106" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/components/SelectTree.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="61" column="19" lean-forward="true" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="47" column="78" lean-forward="true" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/js/vue/src/sfc/parser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/test2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -396,97 +1380,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/views/Home.vue">
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/views/product/Product.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2425">
-          <caret line="77" column="28" lean-forward="false" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+        <state relative-caret-position="507">
+          <caret line="389" column="22" lean-forward="true" selection-start-line="389" selection-start-column="22" selection-end-line="389" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/views/Main.vue">
+    <entry file="file://$PROJECT_DIR$/aigou_shopping/p.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_shopping/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou_shopping/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="12" />
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="56" />
+        <state relative-caret-position="236">
+          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="9" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aigou_web_plat/build/webpack.base.conf.js">
+    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/views/product/Brand.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-870">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="147">
+          <caret line="91" column="20" lean-forward="true" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aigou_web_plat/build/dev-client.js">
+    <entry file="file://$PROJECT_DIR$/aigou_shopping/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="94000">
+          <caret line="4375" column="4" lean-forward="true" selection-start-line="4375" selection-start-column="4" selection-end-line="4375" selection-end-column="4" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aigou_web_plat/build/dev-server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aigou_web_plat/config/dev.env.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aigou_web_plat/config/prod.env.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="905">
-          <caret line="45" column="42" lean-forward="true" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aigou_web_plat/src/views/Login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="67" column="61" lean-forward="true" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aigou_web_plat/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>

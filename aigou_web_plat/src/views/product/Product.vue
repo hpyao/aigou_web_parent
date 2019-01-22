@@ -85,7 +85,7 @@
 						</el-option>
 					</el-select>
 				</el-form-item>
-				<el-form-item label="medias" prop="medias">
+				<el-form-item label="图片" prop="medias">
 					<el-upload
 							class="upload-demo"
 							action="http://127.0.0.1:9527/services/common/upload"
@@ -327,11 +327,41 @@
 
                     })
             },
-            handleOnsale(){
+			onsale(opr){ //上下架处理
+                var ids = this.sels.map(item => item.id).toString(); //1,2,3,4
+                this.$confirm('确认上架选中记录吗？', '提示', {
+                    type: 'warning'
+                }).then(() => {
+                    this.listLoading = true;
+                    let para = { ids: ids,onSale:opr }; //map<ids,opr>
+                    this.$http.post("/product/product/onSale",para).then((res) => {
+                        this.listLoading = false;
+                        if(res.data.success){
+                            this.$message({
+                                message: '操作成功',
+                                type: 'success'
+                            });
+                        }else{
+                            this.$message({
+                                message: res.data.message,
+                                type: 'error'
+                            });
+                        }
+                        this.getProducts();
+                    });
 
+                }).catch(() => {
+
+                });
+			}
+			,
+            handleOnsale(){
+                //上架
+                this.onsale(1);
             },
             handleOffSale(){
-
+                //下架
+				this.onsale(0);
             },
             //性别显示转换
             formatState: function (row, column) {
@@ -339,7 +369,8 @@
             },
             handleSuccess(response, file, fileList){
                 //上传成功回调
-				this.form.logo = file.response.resultObj;
+                //file.response.resultObj+"," fastdfs 返回的路径
+				this.form.medias = this.form.medias+file.response.resultObj+",";
 			},
             handleRemove(file, fileList) {
                 var filePath =file.response.resultObj;
@@ -419,10 +450,31 @@
 			//显示编辑界面
 			handleEdit: function (index, row) {
 				this.formVisible = true;
+                this.form = {
+                    name: '',
+                    subName: '',
+                    productTypeId: 0,
+                    brandId: '',
+                    medias: '',
+                    productExt:{}
+                };
 				//回显 要提交后台
-				//console.debug(row);
 				this.form = Object.assign({}, row);
-			},
+
+                this.fileList2 = [];
+                //回显缩略图
+                let temps =  row.medias.split(",");
+                temps.forEach(img=>{
+                    if(img==null|| img===''){
+                        return;
+                    }
+                    this.fileList2.push({
+                        "url":this.$staticIp+img
+                    })
+				});
+                console.log(this.fileList2);
+
+            },
 			//显示新增界面
 			handleAdd: function () {
 				this.formVisible = true;
@@ -431,7 +483,7 @@
                     subName: '',
                     productTypeId: 0,
                     brandId: '',
-                    //medias: [],
+                    medias: '',
                     productExt:{}
 				};
 			},
@@ -461,14 +513,12 @@
 				this.sels = sels;
 			},
             rowClick: function (row,event,column) {
-                console.log(row);
-                console.log(row.productTypeId);
                 this.curentRow = row;
 
             },
 			//批量删除
 			batchRemove: function () {
-				var ids = this.sels.map(item => item.id).toString();
+				var ids = this.sels.map(item => item.id).toString(); //1,2,3,4
 				this.$confirm('确认删除选中记录吗？', '提示', {
 					type: 'warning'
 				}).then(() => {
@@ -507,10 +557,8 @@
                     //1 确实是第一次从数据库查询值
 					//2 第二次修改属性
                     if(!this.skuIsNull){ //不为null
-						console.log("xxx",this.skuDatas);
                         this.skuIsNull = true;
 					}else{
-                        console.log("jjjj",this.skuProperties);
                         // 过滤掉用户没有填写数据的规格参数
                         const arr = this.skuProperties.filter(s => s.skuValues.length > 0);
                         // 通过reduce进行累加笛卡尔积
@@ -534,7 +582,6 @@
                             item['state'] = 0;
                         })
                         this.skuDatas = skus;
-                        console.log(skus);
 					}
                     let headers = [];
                     //现在没有一定有字段 库存 价格 是否可用 颜色

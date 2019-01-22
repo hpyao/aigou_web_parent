@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./js/vue/dist/vue.js"></script>
+</head>
+<body >
+    <div id="myDiv">
+        <input :value="keyword"/>
+    </div>
+   <script type="text/javascript">
+       new Vue({
+           el:"#myDiv",
+           data:{
+              "keyword":""
+           },
+           mounted(){
+               var xxx = location.href.substr(location.href.indexOf("?")+1);
+               console.log(location.href.substr(location.href.indexOf("?")+1));
+               console.log(xxx.substr(xxx.indexOf("=")+1));
+               this.keyword = xxx.substr(xxx.indexOf("=")+1)
+           }
+       })
+   </script>
+</body>
+</html>
