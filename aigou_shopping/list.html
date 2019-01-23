@@ -25,6 +25,12 @@
 		<!--导入vue和axios-->
 		<script type="text/javascript" src="js/plugins/vue/dist/vue.js"></script>
 		<script type="text/javascript" src="js/plugins/axios/dist/axios.js"></script>
+
+		<script type="text/javascript">
+            axios.defaults.baseURL = "http://127.0.0.1:9527/services"//配置前缀
+            Vue.prototype.$http = axios //给Vue这个类添加一个原型的属性,这个类的对象都能调用
+            Vue.config.productionTip = false
+		</script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				// 搜索框提示显示
@@ -731,10 +737,9 @@
 					<a href="http://www.itsource.cn/" class="index">首页</a>
 
 					<span class="crumbs-arrow">&gt;</span>
-
-					<div class="crumbs-nav crumbs-nav0">
+					<div class="crumbs-nav crumbs-nav0" v-for="node in crumbs" :key="node"  >
 						<a class="crumbs-title" href="http://www.itsource.cn/list.html?cat_id=27">
-							服装内衣专区男装/女装/童装/内衣
+                           xxxxxxxxxxxxxx
 							<i class="icon"></i>
 						</a>
 						<div class="crumbs-drop">
@@ -816,14 +821,7 @@
 						</div>
 					</div>
 
-					<!-- <div class="crumbs-nav">
-			<span class="crumbs-search">
-							<form id="1484876051a6FW9i" class="current-search-form" method="get" action="/list">
-					<input type="text" value="在当前分类下搜索" name="keyword" class="search-term" />
-					<input type="button" class="search-button" />
-				</form>
-			</span>
-		</div> -->
+
 					<script type="text/javascript">
 						$().ready(function() {
 							$("#1484876051a6FW9i").find(".search-button").click(function() {
@@ -856,7 +854,6 @@
 						<!--已选条件-->
 						<!-- -->
 						<!--品牌-->
-
 						<dl class="" id="attr-group-dl-brand">
 							<dt>品牌：</dt>
 							<dd class="moredd">
@@ -1763,9 +1760,7 @@
 										<dd class="first curr">
 											<a href="http://www.itsource.cn/list-27-0-0-0-0-0-0-1-4-51_01-0.html">
 												销量
-
 												<b class="icon-order-DESCending"></b>
-
 											</a>
 										</dd>
 
@@ -4404,8 +4399,11 @@
                     return {
                         queryParams:{
                             "keyword":'',
-                            "productTye":null
-                        }
+                            "productType":null
+                        },
+                        crumbs:[],//面包屑
+						brands:[],//品牌
+						letters:[]
                     }
                 },
                 methods:{
@@ -4422,7 +4420,23 @@
                     var paramValue = tmps[1];
                     //动态属性
                     this.queryParams[paramName] = paramValue;
-                    console.log(this.queryParams,"jjjjjjjjjjjjjj")
+					//判断是否是以类型过来,如果是需要查询面包屑和品牌
+                    let productTypeId = this.queryParams.productType;
+					if(productTypeId){
+                        //对面包屑和品牌进行赋值. 参数都是类型
+						this.$http.get("/product/productType/crumbs/"+productTypeId)
+							.then(res=>{
+							    this.crumbs = res.data
+							})
+						this.$http.get("/product/productType/brands/"+productTypeId)
+							.then(res=>{
+							    this.brands = res.data
+							})
+						this.$http.get("/product/productType/brands/letters/"+productTypeId)
+							.then(res=>{
+							    this.letters = res.data
+							})
+					}
 
                 }
             });
