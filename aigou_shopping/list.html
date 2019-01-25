@@ -752,7 +752,6 @@
 						</div>
 					</div>
 
-
 					<script type="text/javascript">
 						$().ready(function() {
 							$("#1484876051a6FW9i").find(".search-button").click(function() {
@@ -813,7 +812,6 @@
 								<div id="brand-abox-father" class="">
 									<ul id="brand-abox" class="brand-abox-imgul" style="height: 83px; overflow: hidden;">
 										<!--品牌选中状态为brand-seled样式-->
-
 										<li class="brand" v-for="brand in brands" :key="brand" :title="brand.name" :rel="brand.firstLetter" :name="brand.firstLetter" style="display: block;">
 											<input type="checkbox" style="display: none;" name="checkbox_brand[]" id="chk-brand-1" value="65">
 											<a href="javascript:;" :brandId="brand.id"  v-on:click="changeBrand($event)" style="background: url({ imageurl($ lazyload_image)">
@@ -823,8 +821,6 @@
 											</a>
 										</li>
 									</ul>
-
-
 								</div>
 
 								<div class="duoxuan-btnbox">
@@ -1203,7 +1199,7 @@
 										   <div class="item-con">
 											   <!--售罄-->
 											   <div class="item-pic">
-												   <a href="http://www.itsource.cn/goods-2393.html" :title="row.name" target="_blank" style="background: url({ imageurl($ lazyload_image)">
+												   <a :href="'pages/'+row.id+'.html'" :title="row.name" target="_blank" style="background: url({ imageurl($ lazyload_image)">
 													   <img alt="" src="img/test/TB1RwYELXXXXXXHaXXXXXXXXXXX_!!0-item_pic(1).jpg" data-original="http://itsource.img-cn-beijing.aliyuncs.com/图片/taobao-yun-images/537310635822/TB1RwYELXXXXXXHaXXXXXXXXXXX_!!0-item_pic.jpg?x-oss-process=image/resize,m_pad,limit_0,h_320,w_320" style="display: inline;">
 												   </a>
 											   </div>
@@ -1242,7 +1238,7 @@
 													   <em class="sale-count">已售{{row.saleCount}}件</em>
 												   </div>
 												   <div class="item-name">
-													   <a href="http://www.itsource.cn/goods-2393.html" target="_blank" :title="row.name">{{row.name}}</a>
+													   <a :href="'pages/'+row.id+'.html'" target="_blank" :title="row.name">{{row.name}}</a>
 													   <!-- 包邮、赠品标签  _star -->
 
 													   <i class="free-shipping">包邮</i>
@@ -1288,7 +1284,7 @@
 										   <div class="item-con">
 											   <!--售罄-->
 											   <div class="item-pic">
-												   <a href="http://www.itsource.cn/goods-2393.html" :title="row.name" target="_blank" style="background: url({ imageurl($ lazyload_image)">
+												   <a :href="'pages/'+row.id+'.html'" :title="row.name" target="_blank" style="background: url({ imageurl($ lazyload_image)">
 													   <img alt="" src="img/test/TB1RwYELXXXXXXHaXXXXXXXXXXX_!!0-item_pic(1).jpg" data-original="http://itsource.img-cn-beijing.aliyuncs.com/图片/taobao-yun-images/537310635822/TB1RwYELXXXXXXHaXXXXXXXXXXX_!!0-item_pic.jpg?x-oss-process=image/resize,m_pad,limit_0,h_320,w_320" style="display: inline;">
 												   </a>
 											   </div>
@@ -1327,7 +1323,7 @@
 													   <em class="sale-count">已售{{row.saleCount}}件</em>
 												   </div>
 												   <div class="item-name">
-													   <a href="http://www.itsource.cn/goods-2393.html" target="_blank" :title="row.name">{{row.name}}</a>
+													   <a :href="'pages/'+row.id+'.html'" target="_blank" :title="row.name">{{row.name}}</a>
 													   <!-- 包邮、赠品标签  _star -->
 
 													   <i class="free-shipping">包邮</i>
